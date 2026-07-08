@@ -15,10 +15,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    dependencies {
-        implementation("com.google.zxing:core:3.5.3")
-    }
-
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
@@ -41,6 +37,11 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+}
+
+
+dependencies {
+    implementation("com.google.zxing:core:3.5.3")
 }
 
 flutter {
