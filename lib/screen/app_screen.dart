@@ -31,7 +31,7 @@ class _AppScreenState extends State<AppScreen> {
           SizedBox(width: MediaQuery.widthOf(context)),
           Image.asset("assets/qr.png", width: 300),
           leadButton(),
-          urlButton(),
+          ?result == null ? null : urlButton(),
         ],
       ),
     );
